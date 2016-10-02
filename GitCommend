@@ -1,0 +1,8 @@
+
+
+git add filename 
+
+git commit -m 'description'
+
+git checkout -- filename // undo modify  not add or commit
+git reset HEAD file  // 撤销暂存区的修改到工作区，就是撤销add的修改
