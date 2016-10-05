@@ -1,15 +1,19 @@
 
 
 git add filename 
-
 git commit -m 'description'
-
-git checkout -- filename // undo modify  not add or commit
-git reset HEAD file  // 撤销暂存区的修改到工作区，就是撤销add的修改t 
 
 git log -- pretty=oneline // 一行里面显示log
 git reflog // 记录所有指令
+
 git reset -- hard HEAD^  // 版本回退，一个^退回一个， 多个的话 HEAD~100
 git reset -- hard versionid // 回退到相应版本
+git reset HEAD file  // 撤销暂存区的修改到工作区，就是撤销add的修改t 
+git checkout -- filename // undo modify  not add or commit 
 
+git rm filename // 删除版本库中文件
+git checkout -- filename // 回复到版本库最新版本
+
+创建ssh key
+ssh-keygen -t rsa -C 'email'
 
